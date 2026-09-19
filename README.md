@@ -2,9 +2,12 @@
 
 <br>
 
-<img align="right" src="https://cdna.artstation.com/p/assets/images/images/052/141/832/original/johan-cediel-rodriguez-pixel-art-take-008.gif?1659036879?raw=true" width="180" style="margin-left: 15px;"/>
+<div id="header">
+  <img align="right" src="https://cdna.artstation.com/p/assets/images/images/052/141/832/original/johan-cediel-rodriguez-pixel-art-take-008.gif?1659036879?raw=true" width="180" style="margin-left: 15px;"/>
+  <h1>Laravel Framework</h1>
+</div>
 
-# Laravel Framework
+<br>
 
 Laravel es un framework de aplicaciones web en PHP con una sintaxis expresiva y elegante. Su objetivo es convertir el proceso de desarrollo en una experiencia agradable y creativa al simplificar las tareas más comunes en la mayoría de los proyectos web.
 
