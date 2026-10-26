@@ -22,11 +22,11 @@ class MarcasSeeder extends Seeder
                 'created_at' => Carbon::now()
             ],
             [
-                'nombre' => 'Pumas',
+                'nombre' => 'Puma',
                 'created_at' => Carbon::now()
             ],
             [
-                'nombre' => 'Adidas',
+                'nombre' => 'Adida',
                 'created_at' => Carbon::now()
             ],
         );

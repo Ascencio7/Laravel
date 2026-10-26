@@ -2,31 +2,39 @@
 
 namespace Database\Seeders;
 
-use App\Models\User;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Branch;
+use App\Models\Product;
 
 class DatabaseSeeder extends Seeder
 {
-    use WithoutModelEvents;
-
     /**
      * Seed the application's database.
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        // 1. Crear marcas de prueba
+        $marca1 = Branch::create(['nombre' => 'Samsung']);
+        $marca2 = Branch::create(['nombre' => 'Apple']);
+        $marca3 = Branch::create(['nombre' => 'Sony']);
 
-        // User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
-
-        $this->call([
-            MarcasSeeder::class, 
-            ProductosSeeder::class
+        // 2. Crear productos de prueba asociados a las marcas
+        Product::create([
+            'nombre' => 'Galaxy S23',
+            'precio' => '899.99',
+            'marca'  => $marca1->codigo,
         ]);
 
+        Product::create([
+            'nombre' => 'iPhone 15',
+            'precio' => '999.99',
+            'marca'  => $marca2->codigo,
+        ]);
 
+        Product::create([
+            'nombre' => 'Audífonos WH-1000XM5',
+            'precio' => '349.99',
+            'marca'  => $marca3->codigo,
+        ]);
     }
 }
